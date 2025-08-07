@@ -106,7 +106,8 @@ app.get('/todos', async (req, res) => {
         const tasks = await Task.find();
         res.json(tasks);
     } catch (error) {
-        res.status(500).json({ error: 'failed to fetch todos' });
+      //  res.status(500).json({ error: 'failed to fetch todos' });
+      res.send(error.message)
     }
 });
 
