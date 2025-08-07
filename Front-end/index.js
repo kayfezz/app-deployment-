@@ -3,7 +3,7 @@ getTodos();
 
 async function getTodos() {
     try {
-        const response = await fetch("http://localhost:3000/todos");
+        const response = await fetch("https://app-deployment-backend.vercel.app/todos");
         todos = await response.json();
         renderTasks();
     } catch (error) {
@@ -24,7 +24,7 @@ async function addTask() {
     }
 
     try {
-        const response = await fetch("http://localhost:3000/todos", {
+        const response = await fetch("https://app-deployment-backend.vercel.app/todos", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -49,7 +49,7 @@ async function toggleCompletion(id) {
     const newStatus = !todo.isCompleted;
 
     try {
-        const response = await fetch(`http://localhost:3000/todos/${id}`, {
+        const response = await fetch(`https://app-deployment-backend.vercel.app/todos/${id}`, {
             method: "PATCH", 
             headers: {
                 "Content-Type": "application/json"
@@ -70,7 +70,7 @@ async function toggleCompletion(id) {
 
 async function deleteTask(id, index) {
     try {
-        const response = await fetch(`http://localhost:3000/todos/${id}`, {
+        const response = await fetch(`https://app-deployment-backend.vercel.app/todos/${id}`, {
             method: "DELETE"
         });
 
@@ -87,7 +87,7 @@ async function deleteTask(id, index) {
 
 async function updateTodo(id, newTitle, newStatus) {
     try {
-        const response = await fetch(`http://localhost:3000/todos/${id}`, {
+        const response = await fetch(`https://app-deployment-backend.vercel.app/todos/${id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
