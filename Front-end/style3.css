@@ -1,0 +1,231 @@
+
+body {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    background-color: #a2a7e3;
+    border-radius: 12px;
+    color: #e8e6ea;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+h1 {
+    color: aqua;
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #100909;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+button {
+    background-color: aquamarine;
+    color: #090500;
+    border: 3px solid #0aba44;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: brown;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+.center-content {
+    text-align: center;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #50e0f3;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 3px solid #1e8dd7;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+    flex-wrap: wrap;
+}
+
+li input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+
+li button {
+    color: orange;
+    background: none;
+    border: 1px solid black;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+li button:hover {
+    color: bisque;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.action {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+
+.action button {
+    font-size: 16px;
+    padding: 6px 10px;
+    background: none;
+    border: none;
+    color: orange;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.action button:hover {
+    color: bisque;
+}
+
+.bg-img {
+    background-image: url(images/pexels-eberhardgross-1287142.jpg);
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.829);
+    background-blend-mode: overlay;
+    margin-top: 50px;
+}
+
+.login-card {
+      max-width: 400px;
+      margin:50px auto;
+      width: 100%;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0.5rem 1rem rgba(14, 1, 12, 0.1);
+      background: #aab5e3;;
+      color:white;
+      border: 5px solid rgb(30, 141, 215);
+ }
+
+  .login-container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+    footer {
+    background-color: #121212;
+    color: #f1f1f1;
+
+  }
+  footer a {
+    color: #bbbbbb;
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+.register-container {
+     
+    height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+ }
+
+ .register-card {
+      width: 100%;
+      max-width: 450px;
+      padding: 2rem;
+      background: #aab5e3;
+      border: 5px solid rgb(30, 141, 215);
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+ }
+
+ .custom-card {
+    background-color: #aab5e3;
+    border: 5px solid rgb(30, 141, 215);
+    color:white;
+ }
+
+ .completed {
+  text-decoration: line-through;
+  color:gray;
+ }
+
+ .due-date {
+  font-size: 0.8rem;
+  color: orange;
+ }
+
+ .task-left {
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+ }
+
+ .task-actions {
+  display:flex;
+  gap:10px;
+ }
+
+ .due-date {
+  font-size: 0.8rem;
+  color: orange;
+  margin-top: 4px;
+  display: block;
+}
+
+/* Custom Add Task Button */
+.custom-add-btn {
+  background-color: aquamarine;
+  color: #090500;
+  border: 3px solid #0aba44;
+  padding: 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+  font-weight: bold;
+}
+
+.custom-add-btn:hover {
+  background-color: brown;
+  color: white;
+  transform: scale(1.05);
+}

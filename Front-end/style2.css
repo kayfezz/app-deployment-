@@ -1,0 +1,93 @@
+.bg-img {
+    background-image: url(images/pexels-eberhardgross-1287142.jpg);
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0.829);
+    background-blend-mode: overlay;
+    margin-top: 50px;
+}
+
+.login-card {
+      max-width: 400px;
+      margin:50px auto;
+      width: 100%;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0.5rem 1rem rgba(14, 1, 12, 0.1);
+      background: #aab5e3;;
+      color:white;
+      border: 5px solid rgb(30, 141, 215);
+ }
+
+  .login-container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+    footer {
+    background-color: #121212;
+    color: #f1f1f1;
+
+  }
+  footer a {
+    color: #bbbbbb;
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+.register-container {
+     
+    height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+ }
+
+ .register-card {
+      width: 100%;
+      max-width: 450px;
+      padding: 2rem;
+      background: #aab5e3;
+      border: 5px solid rgb(30, 141, 215);
+      color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+ }
+
+ .custom-card {
+    background-color: #aab5e3;
+    border: 5px solid rgb(30, 141, 215);
+    color:white;
+ }
+
+ .completed {
+  text-decoration: line-through;
+  color:gray;
+ }
+
+ .due-date {
+  font-size: 0.8rem;
+  color: orange;
+ }
+
+ .task-left {
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+ }
+
+ .task-actions {
+  display:flex;
+  gap:10px;
+ }
+
+ 
