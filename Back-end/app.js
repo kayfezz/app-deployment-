@@ -7,10 +7,10 @@ const cors = require("cors")
 const app = express();
 
 // Using CORS
-app.use(cors("*"));
+app.use(cors());
 
 // Convert JSON
-app.use(express.json());
+
 // Mongoose
 require("dotenv").config();
 
@@ -54,6 +54,8 @@ userProfileSchema.set('toJSON', {
 });
 
 const UserProfile = mongoose.model("UserProfile", userProfileSchema);
+// Convert to json
+app.use(express.json());
 
 // POST or update user profile (upsert)
 app.post("/api/profile", async (req, res) => {
