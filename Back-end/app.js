@@ -7,7 +7,7 @@ const cors = require("cors")
 const app = express();
 
 // Using CORS
-app.use(cors());
+app.use(cors("*"));
 
 // Convert JSON
 app.use(express.json());
